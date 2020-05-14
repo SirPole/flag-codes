@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@superkoders/eslint-config": "1.2.24",
+    "@superkoders/prettier-config": "0.2.5",
+    "@superkoders/stylelint-config": "1.2.3",
+    "husky": "3.0.9",
+    "lint-staged": "9.5.0"
+  },
+  "scripts": {
+    "lint:css": "stylelint --syntax scss \"src/**/*.{css,scss}\"; exit 0",
+    "lint:css:fix": "prettier-stylelint --write \"src/**/*.{css,scss}\"",
+    "lint:js": "eslint .; exit 0",
+    "lint:js:fix": "eslint . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{scss}": [
+      "stylelint --syntax scss \"*.{css,scss}\""
+    ],
+    "*.js": [
+      "eslint"
+    ]
+  }
+}
