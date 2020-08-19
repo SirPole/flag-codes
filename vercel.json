@@ -1,0 +1,9 @@
+ {
+	"routes": [
+		{
+			"src": "https://flag.codes",
+			"dest": "https://www.flag.codes",
+			"status": 301
+		}
+	]
+}
