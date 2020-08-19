@@ -1,9 +1,9 @@
- {
-	"routes": [
+{
+	"redirects": [
 		{
-			"src": "https://flag.codes/",
-			"dest": "https://www.flag.codes/",
-			"status": 301
+			"source": "https://flag.codes",
+			"destination": "https://www.flag.codes",
+			"permanent": true
 		}
 	]
 }
