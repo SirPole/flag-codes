@@ -1,7 +1,7 @@
 {
 	"routes": [
 		{
-			"src": "https://flag.codes/",
+			"src": "https://flag.codes/.*",
 			"headers": {
 				"Location": "https://www.flag.codes/"
 			},
